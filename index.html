@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url("https://img.freepik.com/free-photo/indian-city-buildings-scene_23-2151823151.jpg?t=st=1725563488~exp=1725567088~hmac=17f59bcdaf5df854dfb0d12e696379f7d9e50b704f28314ee33569ab3762cf47&w=740");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.25em;
+            margin: 0.5em 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .progress-bar-container {
+            width: 80%;
+            margin: 1em auto;
+            height: 30px;
+            position: relative;
+            border-radius: 15px;
+            /* overflow: hidden; */
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #0077B6; /* Changed to sky blue */
+            animation: progressAnimation 2s forwards;
+            border-radius: 15px;
+        }
+
+        .label-container {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            top: 35px;
+            padding: 0 5px;
+            font-size: 0.875em; /* Slightly larger font size for better visibility */
+        }
+
+        .label {
+            color: white;
+            text-align: center;
+            font-size: 0.875em;
+            width: 10%;
+        }
+
+        .social-icons {
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #0077B6; /* Sky blue on hover */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes progressAnimation {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Coming Soon</h1>
+        <p>Site Nearly Ready</p>
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+            <div class="label-container">
+                <div class="label">0%</div>
+                <div class="label">100%</div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
