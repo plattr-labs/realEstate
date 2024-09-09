@@ -16,9 +16,17 @@
             height: 100%;
             overflow: hidden;
             font-family: 'Montserrat', sans-serif;
-            background-image: url("https://img.freepik.com/free-photo/indian-city-buildings-scene_23-2151823151.jpg?t=st=1725563488~exp=1725567088~hmac=17f59bcdaf5df854dfb0d12e696379f7d9e50b704f28314ee33569ab3762cf47&w=740");
-            background-size: cover;
-            background-position: center;
+            position: relative;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
 
         .content {
@@ -188,9 +196,14 @@
 </head>
 
 <body>
+    <video class="background-video" autoplay loop muted>
+        <source src="https://res.cloudinary.com/dss1xnwen/video/upload/v1725863187/Architecture_Buildings_Royalty_Free_Stock_Footage_No_Copyright_Video_tclm0t.mp4"
+            type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <div class="content">
-        <img class="logo" alt="logo"
-            src="https://res.cloudinary.com/dss1xnwen/image/upload/v1725622319/Blue_Property_Agency_Logo_20240905_062426_0000_dl4u1h.png" />
+        <!-- <img class="logo" alt="logo"
+            src="https://res.cloudinary.com/dss1xnwen/image/upload/v1725622319/Blue_Property_Agency_Logo_20240905_062426_0000_dl4u1h.png" /> -->
         <h1>Coming Soon</h1>
         <p>Site Nearly Ready</p>
         <div class="progress-bar-container">
@@ -231,3 +244,4 @@
 </body>
 
 </html>
+
